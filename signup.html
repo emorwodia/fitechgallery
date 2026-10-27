@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7145a2"><title>Create an account | FITCHECK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="account-page">
+  <header class="account-header"><a class="brand" href="index.html"><span class="brand-mark">F</span> FITCHECK</a><a href="index.html" class="account-back">← Back to shopping</a></header>
+  <main class="account-layout account-layout-signup">
+    <section class="account-form-panel">
+      <a class="account-mobile-brand brand" href="index.html"><span class="brand-mark">F</span> FITCHECK</a>
+      <p class="eyebrow">A GOOD LOOK STARTS HERE</p><h1>Join the good-fit club.</h1><p class="account-intro">Create your account for a smoother, more personal shop.</p>
+      <form class="account-form" id="signup-form" novalidate>
+        <label for="signup-name">Your name</label>
+        <input type="text" id="signup-name" name="name" placeholder="What should we call you?" autocomplete="name" required>
+        <label for="signup-email">Email address</label>
+        <input type="email" id="signup-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="signup-password">Create a password</label>
+        <div class="password-field"><input type="password" id="signup-password" name="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required><button type="button" class="password-toggle" data-toggle-password="signup-password" aria-label="Show password">Show</button></div>
+        <label for="signup-confirm-password">Confirm password</label>
+        <div class="password-field"><input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Type it once more" autocomplete="new-password" required><button type="button" class="password-toggle" data-toggle-password="signup-confirm-password" aria-label="Show password">Show</button></div>
+        <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+        <button class="account-submit" type="submit" id="submit-button">Create my account <span>→</span></button>
+      </form>
+      <p class="account-switch">Already have an account? <a href="login.html">Sign in</a></p>
+      <p class="account-terms">By creating an account, you agree to our store terms and privacy policy.</p>
+    </section>
+    <aside class="account-art account-art-signup"><div class="art-copy"><span>FASHION FOR EVERYDAY PEOPLE</span><h2>Look good.<br><em>Spend less.</em></h2><p>Fresh fits, everyday favourites, and a little more joy in getting dressed.</p><div class="art-stamp">F<br><small>FITCHECK</small></div></div></aside>
+  </main>
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
